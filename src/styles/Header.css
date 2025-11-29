@@ -1,0 +1,142 @@
+/* ----------------------------------------
+   GLOBAL HEADER WRAPPER
+-----------------------------------------*/
+.header-wrapper {
+  background: #1d1b1b;      /* SAMPLE CHARCOAL (warm, not blue) */
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+/* ----------------------------------------
+   TOP ROW
+-----------------------------------------*/
+.header-toprow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.header-left a,
+.header-right a {
+  margin: 0 14px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.header-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-title {
+  font-size: 40px;
+  margin: 0;
+  letter-spacing: 1.5px;
+}
+
+/* ----------------------------------------
+   SUBHEADING + TAGLINE
+-----------------------------------------*/
+.header-subheading {
+  margin-top: 125px;
+  font-size: 30px;
+  opacity: 0.9;
+  margin-bottom: 45px;
+  letter-spacing: 1.4px;
+}
+
+.header-tagline {
+  font-size: 18px;
+  opacity: 0.75;
+  margin-bottom: 45px; /* tightened */
+}
+
+/* ----------------------------------------
+   DIVIDER (top line)
+-----------------------------------------*/
+.header-divider {
+  max-width: 88%;
+  height: 2px;
+  background: #b8a69a;
+  opacity: 0.45;
+  margin: 12px 0 30px; /* MUCH tighter, like sample */
+  margin: 25px auto 35px;
+}
+
+/* ----------------------------------------
+   CATEGORY ROW
+-----------------------------------------*/
+.header-categories {
+  display: flex;
+  justify-content: center;
+  gap: 40px;   /* closer like sample */
+  margin-bottom: 50px; /* REDUCED (important) */
+}
+
+/* ----------------------------------------
+   CATEGORY ITEM
+-----------------------------------------*/
+.cat-item {
+  position: relative;
+  display: inline-block;
+  width: 130px;           /* SAME FOR BOX + LINE */
+  text-align: center;
+  padding: 14px 0;         /* tightened vertically */
+  
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #e5d4c8;
+  letter-spacing: 1.2px;
+  font-size: 14px;
+}
+
+/* underline */
+.cat-item::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;           /* MUCH tighter, sample-accurate */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px;           /* EXACTLY MATCHES BOX */
+  height: 2.8px;
+  background: #b8a69a;
+  opacity: 0.7;
+}
+
+/* hover box */
+.cat-item:hover {
+  background: #88d1c0;
+  color: #000;
+}
+
+/* underline stays in place, doesn’t move on hover */
+.cat-item:hover::after {
+  opacity: 0;
+}
+
+/* ----------------------------------------
+   MOBILE
+-----------------------------------------*/
+@media (max-width: 900px) {
+  .header-categories {
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 0;
+  }
+
+  .cat-item {
+    width: 160px;
+  }
+
+  .cat-item::after {
+    width: 160px;
+    bottom: -10px;
+  }
+}
