@@ -1,0 +1,65 @@
+@font-face { 
+  font-family: 'niteclub'; 
+  src: url('NiteClub.woff2') format('woff2'); 
+  font-display: swap; 
+}
+
+@font-face { 
+  font-family: 'mulish'; 
+  src: url('Mulish-Variable.woff2') format('woff2'); 
+  font-display: swap; 
+}
+
+
+@font-face { 
+  font-family: 'montserrat-thin'; 
+  src: url('Montserrat-Thin.woff2') format('woff2'); 
+  font-display: swap; 
+}
+
+@font-face { 
+  font-family: 'montserrat-semibold'; 
+  src: url('Montserrat-SemiBold.woff2') format('woff2'); 
+  font-display: swap; 
+}
+
+@font-face { 
+  font-family: 'mirage-black'; 
+  src: url('Mirage-Black.woff2') format('woff2'); 
+  font-display: swap; 
+}
+
+@font-face { 
+  font-family: 'mirage-bold'; 
+  src: url('Mirage-Bold.woff2') format('woff2'); 
+  font-display: swap; 
+}
+
+@font-face { 
+  font-family: 'mirage'; 
+  src: url('Mirage.woff2') format('woff2'); 
+  font-display: swap; 
+}
+
+@font-face { 
+  font-family: 'mirage-medium'; 
+  src: url('Mirage-Medium.woff2') format('woff2'); 
+  font-display: swap; 
+}
+
+@font-face { 
+  font-family: 'mirage-thin'; 
+  src: url('Mirage-Thin.woff2') format('woff2'); 
+  font-display: swap; 
+}
+ 
+@font-face { 
+  font-family: 'oswald'; 
+  src: url('Oswald-Variable.woff2') format('woff2'); 
+  font-display: swap; 
+}
+
+body {
+    font-family: 'mulish', sans-serif;
+}
+

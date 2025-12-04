@@ -1,5 +1,7 @@
 // src/components/Header.js
 import "../styles/Header.css";
+import { NavLink } from "react-router-dom";
+
 
 function Header() {
   return (
@@ -8,40 +10,41 @@ function Header() {
       {/* TOP ROW */}
       <div className="header-toprow">
         <nav className="header-left">
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Shop</a>
-          <a href="#">Contact</a>
+          <NavLink to="/about">ABOUT</NavLink>
+          <NavLink to="/services">SERVICES</NavLink>
+          <NavLink to="/shop">SHOP</NavLink>
+          <NavLink to="/contact">CONTACT</NavLink>
         </nav>
 
         <div className="header-center">
-          <h1 className="header-title">Artful Bytes</h1>
+          <h1 className="header-title">ARTFUL BYTES Blog</h1>
         </div>
 
         <div className="header-right">
-          <a href="#">IG</a>
-          <a href="#">Pin</a>
-          <a href="#">FB</a>
+          <a href="https://www.instagram.com/ "target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+          <a href="https://www.tiktok.com/explore" target="_blank" rel="noopener noreferrer">TIKTOK</a>
+          <a href="https://www.threads.com/?hl=en" target="_blank" rel="noopener noreferrer">THREADS</a>
+          <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">CART</a>
         </div>
       </div>
 
+      <br></br>
       {/* SUBHEADING */}
       <p className="header-subheading">GREEN TEA & CODE</p>
 
       {/* TAGLINE */}
-      <p className="header-tagline">
-        Brewing creativity. One line at a time. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed  
-      </p>
-
+      <p className="header-tagline"> Brewing creativity. One line at a time. </p>
+      
+       
       {/* DIVIDER */}
       <div className="header-divider"></div>
 
       {/* CATEGORIES */}
       <nav className="header-categories">
-        <a href="#" className="cat-item">Life</a>
-        <a href="#" className="cat-item">Tech</a>
-        <a href="#" className="cat-item">Books</a>
-        <a href="#" className="cat-item">Kitchen</a>
+        <NavLink to="/life">LIFE</NavLink>
+        <NavLink to="/tech">TECH</NavLink>
+        <NavLink to="/books">BOOKS</NavLink>
+        <NavLink to="/kitchen">KITCHEN</NavLink>
       </nav>
 
     </header>
