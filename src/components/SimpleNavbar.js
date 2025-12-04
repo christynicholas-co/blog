@@ -60,10 +60,11 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { NavLink } from "react-router-dom";
+import '../styles/SimpleNavbar.css';
 
 function SimpleNavbar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="simple-navbar" >
       <Container>
          <Navbar className="bg-body-tertiary">
         <Container>
@@ -76,7 +77,7 @@ function SimpleNavbar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
 
-            <Nav.Link as={NavLink} to="/">Home</Nav.Link>
+            <Nav.Link as={NavLink} to="/">HOME</Nav.Link>
             <Nav.Link as={NavLink} to= "/about">ABOUT</Nav.Link>
 
             <NavDropdown title={<NavLink to ="/services" className="dropdown-title-link">SERVICES</NavLink>} id="services-dropdown" >

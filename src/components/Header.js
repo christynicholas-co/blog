@@ -10,6 +10,7 @@ function Header() {
       {/* TOP ROW */}
       <div className="header-toprow">
         <nav className="header-left">
+          <NavLink to="/">HOME</NavLink>
           <NavLink to="/about">ABOUT</NavLink>
           <NavLink to="/services">SERVICES</NavLink>
           <NavLink to="/shop">SHOP</NavLink>
