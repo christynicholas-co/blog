@@ -14,8 +14,12 @@ import Tech from "./components/blog/Tech";
 import Books from "./components/blog/Books";
 import Kitchen from "./components/blog/Kitchen";
 
+// footer import
+import Footer from "./components/footer/Footer";
+
 function App() {
   return (
+    <>
     <Routes>
       {/* main landing blog */}
       <Route path="/" element={<Home />} />
@@ -32,6 +36,9 @@ function App() {
       <Route path="/books" element={<BlogLayout> <Books/></BlogLayout>} />
       <Route path="/kitchen" element={<BlogLayout><Kitchen/></BlogLayout>} />
     </Routes>
+
+    <Footer />
+    </>
   );
 }
 

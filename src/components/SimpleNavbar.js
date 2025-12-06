@@ -67,11 +67,7 @@ function SimpleNavbar() {
     <Navbar expand="lg" className="simple-navbar" >
       <Container>
          <Navbar className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand href="#home"><img alt="" src="../img/logo.svg" width="30" height="30" className="d-inline-block align-top"/>
-          {' '} ARTFUL BYTES Blog
-          </Navbar.Brand>
-        </Container>
+        
       </Navbar>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -99,6 +95,12 @@ function SimpleNavbar() {
        
 
              <Nav.Link as={NavLink} to= "/contact">CONTACT</Nav.Link>
+
+             <Container>
+          <Navbar.Brand href="#home"><img alt="" src="../img/logo.svg" width="30" height="30" className="d-inline-block align-top"/>
+          {' '} ARTFUL BYTES Blog
+          </Navbar.Brand>
+        </Container>
             
           </Nav>
         </Navbar.Collapse>

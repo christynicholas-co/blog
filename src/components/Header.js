@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
+    <>
     <header className="header-wrapper">
 
       {/* TOP ROW */}
@@ -40,15 +41,15 @@ function Header() {
       {/* DIVIDER */}
       <div className="header-divider"></div>
 
-      {/* CATEGORIES */}
+    </header>
+    {/* CATEGORIES */}
       <nav className="header-categories">
         <NavLink to="/life">LIFE</NavLink>
         <NavLink to="/tech">TECH</NavLink>
         <NavLink to="/books">BOOKS</NavLink>
         <NavLink to="/kitchen">KITCHEN</NavLink>
       </nav>
-
-    </header>
+     </>
   );
 }
 
