@@ -1,0 +1,90 @@
+/* FULL DARK SERVICE CARD – Artful Bytes */
+/* palette: #242220, #3F5A47, #7C8B75, #E3E7E2, mint: #8FFFE2 */
+
+.service-item {
+  display: flex;
+  background: #242220;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  transition: all 0.35s ease;
+}
+
+/* Left icon panel */
+.service-icon {
+  flex: 0 0 90px;
+  background: #1A1A18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8FFFE2;
+  font-size: 32px;
+  border-right: 1px solid rgba(255,255,255,0.05);
+}
+
+.service-item:hover .service-icon {
+  background: #5F8C6A;
+}
+
+/* Content */
+.service-content {
+  padding: 30px;
+  position: relative;
+  color: #E3E7E2;
+}
+
+/* Giant subtle number */
+.service-number {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 60px;
+  font-weight: 800;
+  color: rgba(255,255,255,0.06);
+}
+
+/* Title */
+.service-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* Text */
+.service-text {
+  font-size: 15px;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Learn More link */
+.service-link {
+  font-weight: 600;
+  color: #5F8C6A;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.service-link:hover {
+  color: #7FBF95;
+}
+
+.service-link i {
+  transition: transform 0.3s ease;
+}
+
+.service-link:hover i {
+  transform: translateX(5px);
+}
+
+/* Hover lift */
+.service-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.45);
+}

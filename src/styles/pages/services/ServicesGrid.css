@@ -1,0 +1,35 @@
+/* Grid Wrapper */
+.services-container {
+  margin: 90px auto;
+  width: 100%;
+}
+
+.row.g-4 > div {
+  display: flex;
+}
+
+/* Grid Wrapper */
+.services-container {
+ width: 100%;
+ padding: 50px 100px;
+ background: #0a0a0a;        /* pure black background for the row */
+}
+
+.services-header {
+  text-align: center;
+  color: #E3E7E2;
+  margin-bottom: 40px;
+}
+
+.services-header h2 {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #E3E7E2;
+}
+
+.services-header p {
+  font-size: 16px;
+  color: rgba(255,255,255,0.6);
+  margin-top: 10px;
+}

@@ -1,0 +1,24 @@
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.services-list a {
+  display: block;
+  padding: 10px 15px;
+  background: #f7f7f7;
+  border-radius: 4px;
+  color: #333;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.services-list a:hover {
+  background: #e2e2e2;
+}
+
+.services-list a.active {
+  background: #3f5a47;
+  color: #fff;
+}

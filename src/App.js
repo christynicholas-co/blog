@@ -3,7 +3,8 @@ import { Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Services from "./pages/Services";
+import Services from "./pages/services/Services";
+import ServiceDetails from "./pages/services/ServiceDetails";
 import Shop from "./pages/Shop";
 import Contact from "./pages/Contact";
 
@@ -27,6 +28,7 @@ function App() {
       {/* site pages */}
       <Route path="/about" element={<About />} />
       <Route path="/services" element={<Services />} />
+      <Route path="/services/:id" element={<ServiceDetails />} />
       <Route path="/shop" element={<Shop />} />
       <Route path="/contact" element={<Contact />} />
 
