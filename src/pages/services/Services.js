@@ -2,13 +2,9 @@
 
 import React from "react";
 import SimpleNavbar from "../../components/SimpleNavbar";
-import PricingBox from "./PricingBox";
-import WhatYouGetStack from "./WhatYouGetStack";
-import TechUsed from "./TechUsed";
-import WorkProcess from "./WorkProcess";
-import ServicesMenu from "./ServicesMenu";
 import AboutServices from "./AboutServices";
 import ServicesGrid from "./ServicesGrid";
+import heroImg from "../../styles/images/header/services-hero.jpg";
 
 function Services() {
   return (
@@ -16,26 +12,18 @@ function Services() {
       <SimpleNavbar />
 
       <div className="services-page">
-        <h1>Services offered by Artful Bytes</h1>
+        {/* Hero Section */}
+        <div className="services-hero" style={{ backgroundImage: `url(${heroImg})` }}>
+          <div className="services-hero-overlay">
+            <h1 className="services-hero-title">Services</h1>
+            <p className="services-hero-subtitle">
+              Crafting digital experiences with design, strategy, and technology
+            </p>
+          </div>
+        </div>
 
         <AboutServices />
-
-        <PricingBox
-          title="Web Development"
-          tagline="Full-Stack Solutions"
-          price="$2,500"
-          delivery="4-6 weeks delivery"
-          revisions="Unlimited revisions"
-          support="60 days support"
-        />
-
-        <WhatYouGetStack />
-
-        <TechUsed />
-
         <ServicesGrid />
-
-        <WorkProcess />
       </div>
     </>
   );
