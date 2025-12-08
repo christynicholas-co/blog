@@ -18,7 +18,7 @@ export default function ServicesGrid() {
             number="01"
             title="Custom Application Development"
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum tortor sem, in semper nisl bibendum eu."
-            link="/services/details/app-development"
+            link="/services/design"
           />
         </div>
 
@@ -28,7 +28,7 @@ export default function ServicesGrid() {
             number="02"
             title="Strategic Business Planning"
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum tortor sem, in semper nisl bibendum eu."
-            link="/services/details/business-planning"
+            link="/services/web"
           />
         </div>
 
@@ -38,7 +38,7 @@ export default function ServicesGrid() {
             number="03"
             title="Brand & Identity Design"
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum tortor sem, in semper nisl bibendum eu."
-            link="/services/details/brand-identity"
+            link="/services/logos"
           />
         </div>
 
@@ -48,7 +48,7 @@ export default function ServicesGrid() {
             number="04"
             title="Digital Marketing & SEO"
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum tortor sem, in semper nisl bibendum eu."
-            link="/services/details/marketing-seo"
+            link="/services/etc"
           />
         </div>
       </div>

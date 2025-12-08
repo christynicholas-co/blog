@@ -77,11 +77,11 @@ function SimpleNavbar() {
             <Nav.Link as={NavLink} to= "/about">ABOUT</Nav.Link>
 
             <NavDropdown title={<NavLink to ="/services" className="dropdown-title-link">SERVICES</NavLink>} id="services-dropdown" >
-              <NavDropdown.Item as={NavLink} to="/services#design">Design</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/services#web">Web Dev</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/services#logos">Logos</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/services/design">Design</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/services/web">Web Dev</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/services/logos">Logos</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item as={NavLink} to="/services#etc">Etc</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/services/etc">Etc</NavDropdown.Item>
             </NavDropdown>
 
             <NavDropdown title={<NavLink to ="/shop" className="dropdown-title-link">SHOP</NavLink>} id="shop-dropdown" >

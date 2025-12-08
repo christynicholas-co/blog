@@ -1,0 +1,95 @@
+.contact-container {
+  display: flex;
+  width: 900px;
+  height: 400px;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+/* Wrapper keeps outer edges straight */
+.panel-wrapper {
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Left panel skewed inward */
+.left-panel {
+  transform: skewX(-10deg);
+  padding: 2rem;
+  background: #3F5A47;
+  color: #000;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Unskew left content */
+.left-panel > * {
+  transform: skewX(10deg);
+}
+
+/* Right panel skewed inward */
+.right-panel {
+  transform: skewX(-10deg);
+  padding: 2rem;
+  background: #111; /* charcoal black restored */
+  color: #eee;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Unskew right content */
+.right-panel > * {
+  transform: skewX(10deg);
+}
+
+input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #555;
+  color: #eee;
+  padding: 0.5rem 0;
+}
+
+input::placeholder {
+  color: #777;
+}
+
+textarea {
+  background: #222;
+  border: none;
+  color: #eee;
+  padding: 1rem;
+  resize: none;
+}
+
+.bubbles {
+  display: flex;
+  gap: 1rem;
+}
+
+.bubble {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.bubble.active {
+  background: #444;
+  color: #fff;
+}
+
+.send-btn {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: #B8EFD9;
+  cursor: pointer;
+}
+
+body {
+  background-color: #242220;
+}

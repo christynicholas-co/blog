@@ -1,9 +1,11 @@
-// src/pages/services/Services.js
-
 import React from "react";
 import SimpleNavbar from "../../components/SimpleNavbar";
 import AboutServices from "./AboutServices";
 import ServicesGrid from "./ServicesGrid";
+import FaqDropdown from "./FaqDropdown";
+import FaqHeader from "./FaqHeader";
+import ContactServices from "./ContactServices";
+
 import heroImg from "../../styles/images/header/services-hero.jpg";
 
 function Services() {
@@ -12,8 +14,12 @@ function Services() {
       <SimpleNavbar />
 
       <div className="services-page">
-        {/* Hero Section */}
-        <div className="services-hero" style={{ backgroundImage: `url(${heroImg})` }}>
+
+        {/* Hero */}
+        <div
+          className="services-hero"
+          style={{ backgroundImage: `url(${heroImg})` }}
+        >
           <div className="services-hero-overlay">
             <h1 className="services-hero-title">Services</h1>
             <p className="services-hero-subtitle">
@@ -24,6 +30,12 @@ function Services() {
 
         <AboutServices />
         <ServicesGrid />
+
+        <FaqHeader />
+        <FaqDropdown />
+
+        <ContactServices />
+
       </div>
     </>
   );
