@@ -2,6 +2,7 @@ import React from "react";
 import SimpleNavbar from "../../components/SimpleNavbar";
 import AboutServices from "./AboutServices";
 import ServicesGrid from "./ServicesGrid";
+import ServicesCard from "./ServicesCard";
 import FaqDropdown from "./FaqDropdown";
 import FaqHeader from "./FaqHeader";
 import ContactServices from "./ContactServices";
@@ -29,6 +30,7 @@ function Services() {
         </div>
 
         <AboutServices />
+        <ServicesCard />
         <ServicesGrid />
 
         <FaqHeader />
