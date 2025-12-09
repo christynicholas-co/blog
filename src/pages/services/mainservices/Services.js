@@ -1,13 +1,13 @@
 import React from "react";
-import SimpleNavbar from "../../components/SimpleNavbar";
+import SimpleNavbar from "../../../components/SimpleNavbar";
 import AboutServices from "./AboutServices";
 import ServicesGrid from "./ServicesGrid";
 import ServicesCard from "./ServicesCard";
 import FaqDropdown from "./FaqDropdown";
 import FaqHeader from "./FaqHeader";
-import ContactServices from "./ContactServices";
+import ContactServices from "../servicescontactform/ContactServices";
 
-import heroImg from "../../styles/images/header/services-hero.jpg";
+import heroImg from "../../../styles/images/header/header-bg.jpg";
 
 function Services() {
   return (

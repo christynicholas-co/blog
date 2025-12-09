@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/pages/services/ServicesCard.css";
+import "../../../styles/pages/services/mainservices/ServicesCard.css";
 
 export default function ServicesCard({ icon, number, title, text, link }) {
   return (

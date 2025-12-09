@@ -3,8 +3,8 @@ import { Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Services from "./pages/services/Services";
-import ServiceDetails from "./pages/services/ServiceDetails";
+import Services from "./pages/services/mainservices/Services";
+import ServiceDetails from "./pages/services/servicesdetails/ServiceDetails";
 import Shop from "./pages/Shop";
 import Contact from "./pages/Contact";
 

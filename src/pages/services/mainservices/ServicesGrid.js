@@ -1,6 +1,6 @@
 import React from "react";
 import ServicesCard from "./ServicesCard";
-import "../../styles/pages/services/ServicesGrid.css";
+import "../../../styles/pages/services/mainservices/ServicesGrid.css";
 
 export default function ServicesGrid() {
   return (

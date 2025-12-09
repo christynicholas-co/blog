@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/pages/services/WorkProcess.css";
+import "../../../styles/pages/services/servicesdetails/WorkProcess.css";
 
 export default function WorkProcess() {
   return (

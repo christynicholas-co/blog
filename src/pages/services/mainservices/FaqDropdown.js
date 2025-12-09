@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../styles/pages/services/FaqDropdown.css";
+import "../../../styles/pages/services/mainservices/FaqDropdown.css";
 
 export default function FaqDropdown() {
   const [openIndex, setOpenIndex] = useState(null);

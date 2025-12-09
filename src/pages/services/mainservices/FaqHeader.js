@@ -1,4 +1,4 @@
-import "../../styles/pages/services/FaqHeader.css";
+import "../../../styles/pages/services/mainservices/FaqHeader.css";
 
 
 export default function FaqHeader() {

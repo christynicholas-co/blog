@@ -1,4 +1,3 @@
-// PricingBox.js
 import React from "react";
 
 export default function PricingBox({ title = "JS", price = "$1,200", period = "project", features = [], ctaLabel = "Get started", onCta = () => {} }) {
