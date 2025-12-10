@@ -7,7 +7,7 @@ import FaqDropdown from "./FaqDropdown";
 import FaqHeader from "./FaqHeader";
 import ContactServices from "../servicescontactform/ContactServices";
 
-import heroImg from "../../../styles/images/header/header-bg.jpg";
+import heroImg from "../../../styles/images/header/services-hero.png";
 
 function Services() {
   return (

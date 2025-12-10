@@ -1,26 +1,41 @@
-.layout-container {
-  width: 100%;
-  height: 600px; /* Adjust height as needed for your application */
-  position: relative;
+
+.form-wrapper {
+  width: 80%;
+  max-width: 350px; /* Constrains the form width */
+}
+
+.contentBox {
   display: flex;
-  overflow: hidden;
-  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vh;
+  max-height: 100%;
+}
+
+.form-container {
+  display: flex;
+  width: 1000px;
+  max-width: 90%;
+  height: 400px; /* Adjust height as needed */
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden; /* Ensures diagonal edges are contained */
 }
 
 /* The core diagonal split using a pseudo-element background */
-.layout-container::before {
+.form-container::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  /* Defining the colors and the sharp diagonal line */
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+/* Defining the colors and the sharp diagonal line */
   background: linear-gradient(115deg, 
-    #3F5A47 0%, 0%, #3F5A47 0%, 50%, /* Left side (White) */
+    #3F5A47 0%, 0%, #3F5A47 0%, 50%, /* Left side (Dark Green) */
     #1a1a1a 50%, #1a1a1a 100% /* Right side (Dark Gray/Black) */
   );
-  z-index: 0;
 }
 
 .side-content {
@@ -30,22 +45,31 @@
   padding: 40px; /* Add some padding around the edges */
 }
 
-.left-side {
+.left-panel {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-align: left;
   /* Content alignment can be adjusted here if you add text */
 }
 
-.right-side {
+
+.right-panel {
   color: #fff;
   display: flex;
-  justify-content: center; /* Centers the form block horizontally */
-  align-items: center;     /* Centers the form block vertically within its half */
-  text-align: right;       /* Aligns text within the right side wrapper */
+  justify-content: center; /* Centers the form block horizontally */ 
+  align-items: center;     /* Centers the form block vertically within its half */ 
+  text-align: right;       /* Aligns text within the right side wrapper */ 
+   /* Content alignment can be adjusted here if you add text */
 }
+
 
 .form-wrapper {
   width: 100%;
   max-width: 350px; /* Constrains the form width */
+  
 }
+
 
 .form-title {
   margin-bottom: 30px;
@@ -59,16 +83,18 @@
 
 .form-group label {
   display: none; /* Labels are visually hidden but used for accessibility (for= attribute) */
+  
 }
 
 .form-group input {
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 20px;
   background: none;
   border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  width: 100%;
-  color: white;
-  padding: 5px 0;
-  font-size: 14px;
+  border-bottom: 1px solid #555;
+  color: #fff;
+  font-size: 16px;
 }
 
 .form-group input:focus {
@@ -78,13 +104,17 @@
 
 .send-button {
   background: none;
-  border: none;
+  border: 1px solid #555;
   color: #fff;
-  padding: 0;
+  padding: 10px 20px;
+  float: right;
   cursor: pointer;
-  font-size: 14px;
-  margin-top: 20px;
-  opacity: 0.8;
+  margin-top: 20%;
+  transition: all 0.3s ease;
+}
+
+.send-button:hover {
+  color: #fff;
 }
 
 /* --- Navigation Icons --- */
@@ -92,12 +122,12 @@
   position: absolute;
   z-index: 2;
   padding: 15px;
-  color: #333; /* Icons take color of the background they are over (white side) */
 }
 
 .top-left {
   top: 0;
   left: 0;
+  color:white;
 }
 
 .top-right {
@@ -110,17 +140,54 @@
     margin-left: 15px;
 }
 
-/* --- Bottom Bar --- */
-.bottom-bar {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #000;
-    height: 30px;
-    z-index: 2;
-    color: #f0f0f0;
-    font-size: 12px;
-    padding: 0 10px;
-    /* Add styling for the warning text shown in the image here */
+
+
+  
+/* Form element styling */
+/*
+
+.form-container {
+  display: flex;
+  width: 600px;
+  height: 400px; /* Adjust height as needed 
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden; /* Ensures diagonal edges are contained 
 }
+*/
+/*
+input,
+textarea {
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #555;
+  color: #fff;
+  font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-bottom-color: #fff;
+}
+
+.send-button {
+  background: none;
+  border: 1px solid #555;
+  color: #aaa;
+  padding: 10px 20px;
+  cursor: pointer;
+  float: right;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.send-button:hover {
+  color: #fff;
+}
+*/
+
