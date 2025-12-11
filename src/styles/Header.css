@@ -1,120 +1,138 @@
-body, html {
-  margin: 0;
-  padding: 0;
-}
+.header-container {
+  background-color: #1c1c1c; /* Dark background color */
+  color: #d4d4d4; /* Light text color */
+  padding: 50px 5%; /* Adjust padding as needed */
+  font-family: sans-serif;
 
-/* Header wrapper overall charcoal */
-.header-wrapper {
-  background-color: #242220;
-  background-image: url('./images/header/header-bg.jpg');
-  background-size: cover;
-  background-position: bottom;
+  background-image: linear-gradient(rgba(28, 28, 28, 0.8), rgba(10, 10, 10, 0.9)), url("./images/header/header-bg.jpg");
+  background-size: cover; 
+  background-position: center; 
   background-repeat: no-repeat;
-  position: relative;
-  overflow: hidden;
-  height: 475px;
+  min-height: 500px;
 }
 
-.header-wrapper::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(36, 34, 32, 0.85); /* charcoal overlay */
-  pointer-events: none;
-  z-index: 0;
-}
-
-.header-title,
-.header-subheading,
-.header-tagline,
-.header-toprow,
-.header-categories,
-.header-divider {
-  position: relative;
-  z-index: 1;
-}
-
-/* ----[font color, weight, size, family]--- */
-.header-title {font-family: "niteclub"; font-size: 30px; color: #B8EFD9;}
-
-.header-left a, .header-right a {font-family: "Montserrat", sans-serif; font-weight: 300; font-size: 16px;color: #E3E7E2;}
-.header-left a:hover, .header-right a:hover {color: #B8EFD9;}
-
-
-
-.header-subheading {font-family: "Oswald", sans-serif; font-size: 50px;color: #E3E7E2; }
-
-.header-tagline {font-family: "Oswald", sans-serif;font-size: 22px;color: #A7C8A9; }
-
-.header-categories a {font-family: "Montserrat", sans-serif; font-weight: 600;font-size: 24px; color: #242220;}
-.header-categories a:hover {color: #B8EFD9;}
-
-
-
-/* Top nav band in charcoal */
-.header-toprow {
+.top-nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 10px 100px;
-  background-color: #242220; 
-  border-bottom: none;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
+.main-nav-links, .social-icons {
+    flex-basis: 200px; /* Adjust this fixed width as needed */
+}
+.logo-container {
+  flex-grow: 1;
+  text-align: center;
+}
 
-/* Categories band in green */
-.header-categories {
+.main-nav-links a, .social-icons .icon {
+  color: #d4d4d4;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.social-icons, .cart-icon {
+  margin-left: 20px;
+}
+
+.main-nav-links {
+  flex-basis: 300px;
+  text-align: left;
+}
+
+.social-icons {
+  flex-basis: 300px;
+  text-align: right;
+}
+
+.main-nav-links a:hover, .social-icons .icon:hover {
+  color: #ffffff;
+}
+
+.logo-container {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: #d4d4d4;
+}
+
+.cart-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: transparent;
+    color: #d4d4d4;
+    font-size: 10px;
+}
+
+.blog-header {
+  text-align: center;
+  padding: 60px 0 30px;
+}
+
+.blog-header h1 {
+  font-size: 40px;
+  margin: 0;
+  color: #d4d4d4;
+}
+
+.blog-header h5 {
+  font-size: 22px;
+  color: #a0a0a0;
+  max-width: 600px;
+  margin: 10px auto 0;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 20px 0;
+}
+
+.blog-categories {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 45px 0;
-  text-align: center;
-  background-color: #3F5A47; 
-  border-top: none; 
-  border-bottom: 10px solid #242220; 
+  gap: 18px;
+  padding-top: 10px;
+}
+
+.category-item {
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none; 
+  position: relative;
+  color: #d4d4d4;
+  background: linear-gradient(to bottom, transparent calc(100% - 2px), #d4d4d4 calc(100% - 2px));
+  background-repeat: no-repeat; 
+  transition: none; 
 }
 
 
-/*spacing and responsiveness*/
-.header-left {flex: 1; display: flex; justify-content: flex-start; gap: 15px; min-width: 150px;transition: color 0.3s}
-.header-title {flex: 1; display: flex; justify-content: center; min-width: 150px;}
-.header-right {flex: 1; display: flex; justify-content: flex-end; gap: 15px; min-width: 150px;transition: color 0.3s}
-
-.header-subheading {
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: 10px;}
-
-.header-tagline {
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: 10px;
+.category-item:hover {
+    color: #1c1c1c; 
+    background-color: #d4d4d4; 
 }
 
-.header-categories a {
-  margin: 0 20px; 
-  transition: color 0.3s;
+/* Active State: Change the background color when clicked (managed by React/JS) */
+.category-item.active {
+  background-color: #ffffff; 
+  color: #1c1c1c;
+  padding: 10px 20px;
+  border: 2px solid transparent;
 }
 
-
-/* Responsive tweaks */
-@media (max-width: 1024px) {
-  .header-toprow {
-    flex-direction: column;
-    padding: 40px;
-  }
-
-  .header-left,
-  .header-center,
-  .header-right {
-    flex: unset;
-    justify-content: center;
-    margin: 5px 0;
-  }
-
-  .header-left a,
-  .header-right a {
-    font-size: 0.9rem;
-  }
-}

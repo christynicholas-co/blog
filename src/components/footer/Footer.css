@@ -1,57 +1,16 @@
 /* Footer wrapper */
 .footer {
-  background: #242220; /* dark charcoal to match header */
+  background: #45524b; 
   color: #E3E7E2;      /* light gray text for contrast */
   font-family: Roboto, sans-serif;
   padding: 40px 0 20px 0;
 }
 
-/* Newsletter section */
-.footer-newsletter {
-  padding: 30px 0;
-  background: #3F5A47; /* deep green block for contrast */
-  text-align: center;
-}
-
-.footer-newsletter h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #B8EFD9; /* mint accent */
-}
-
-.footer-newsletter p {
-  margin-bottom: 15px;
-  color: #E3E7E2; /* light text on green background */
-}
-
-.footer-newsletter input[type="email"] {
-  padding: 10px;
-  border: 1px solid #7C8B75; /* muted sage border */
-  border-radius: 4px;
-  width: 70%;
-  max-width: 300px;
-  background: #E3E7E2;
-  color: #242220;
-}
-
-.footer-newsletter input[type="submit"] {
-  padding: 10px 20px;
-  margin-left: 10px;
-  background: #3F5A47; /* button green */
-  color: #E3E7E2;      /* button text light */
-  border: none;
-  border-radius: 4px;
-  transition: background 0.3s;
-}
-
-.footer-newsletter input[type="submit"]:hover {
-  background: #7C8B75; /* sage hover */
-}
 
 /* Top section with columns */
 .footer-top {
   padding: 40px 0;
-  background: #242220; /* keep charcoal consistent */
+  background: #45524b; 
 }
 
 .footer-about .description {
@@ -94,7 +53,7 @@
 /* Copyright bar */
 .copyright {
   padding: 20px 0;
-  background: #3F5A47; /* deep green bar */
+  background: #45524b; 
   text-align: center;
   font-size: 14px;
   color: #E3E7E2;      /* light text */

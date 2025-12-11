@@ -1,56 +1,87 @@
-// src/components/Header.js
-import "../styles/Header.css";
-import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { NavLink, useLocation } from "react-router-dom";
+import { FaInstagram, FaPinterestP, FaFacebookF } from 'react-icons/fa';
+import { BsBag } from 'react-icons/bs';
+import '../styles/Header.css'; 
 
+const HeaderComponent = () => {
+  const location = useLocation();
+  const [activeCategoryPath, setActiveCategoryPath] = useState(location.pathname);
 
-function Header() {
+  // Function to handle the click event and update the active state
+  const handleCategoryClick = (event, path) => {
+    // NavLink handles the actual routing, we just update the local state for styling
+    setActiveCategoryPath(path);
+  };
+
+  // Update the state if the user navigates using other links in the app
+  useEffect(() => {
+    setActiveCategoryPath(location.pathname);
+  }, [location.pathname]);
+
+  // Helper function to check if the current link should have the 'active' CSS class
+  const getCategoryClass = (path) => {
+    return activeCategoryPath === path ? 'category-item active' : 'category-item';
+  };
+
   return (
-    <>
-    <header className="header-wrapper">
-
-      {/* TOP ROW */}
-      <div className="header-toprow">
-        <nav className="header-left">
-          <NavLink to="/">HOME</NavLink>
-          <NavLink to="/about">ABOUT</NavLink>
-          <NavLink to="/services">SERVICES</NavLink>
-          <NavLink to="/shop">SHOP</NavLink>
-          <NavLink to="/contact">CONTACT</NavLink>
+    <header className="header-container">
+      <div className="top-nav">
+        <nav className="main-nav-links">
+          <a href="/">Home</a>
+          <a href="/About">About</a>
+          <a href="/Services">Services</a>
+          <a href="/Shop">Shop</a>
+          <a href="/Contact">Contact</a>
         </nav>
-
-        <div className="header-center">
-          <h1 className="header-title">ARTFUL BYTES Blog</h1>
+        <div className="logo-container">
+          <span className="logo-text">ARTFUL BYTES</span>
         </div>
-
-        <div className="header-right">
-          <a href="https://www.instagram.com/ "target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
-          <a href="https://www.tiktok.com/explore" target="_blank" rel="noopener noreferrer">TIKTOK</a>
-          <a href="https://www.threads.com/?hl=en" target="_blank" rel="noopener noreferrer">THREADS</a>
-          <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">CART</a>
+        <div className="social-icons">
+          <FaInstagram className="icon" />
+          <FaPinterestP className="icon" />
+          <FaFacebookF className="icon" />
+          <div className="cart-icon">
+            <BsBag className="icon" />
+            <span className="cart-count">0</span>
+          </div>
         </div>
       </div>
 
-      <br></br>
-      {/* SUBHEADING */}
-      <p className="header-subheading">GREEN TEA & CODE</p>
+      <div className="blog-header">
+        <h1>Green Tea & Code</h1>
+        <h5>Brewing creativity one line at a time</h5>
+      </div>
 
-      {/* TAGLINE */}
-      <p className="header-tagline"> Brewing creativity. One line at a time. </p>
-      
-       
-      {/* DIVIDER */}
-      <div className="header-divider"></div>
+      <hr className="divider" />
 
+      <div className="blog-categories">
+        <NavLink 
+          to="/Life" 
+          className={getCategoryClass('/Life')} 
+          onClick={(e) => handleCategoryClick(e, '/Life')}
+        >LIFE</NavLink>
+        
+        <NavLink 
+          to="/Tech" 
+          className={getCategoryClass('/Tech')} 
+          onClick={(e) => handleCategoryClick(e, '/Tech')}
+        >TECHNOLOGY</NavLink>
+        
+        <NavLink 
+          to="/Books" 
+          className={getCategoryClass('/Books')} 
+          onClick={(e) => handleCategoryClick(e, '/Books')}
+        >BOOKS</NavLink>
+        
+        <NavLink 
+          to="/Kitchen" 
+          className={getCategoryClass('/Kitchen')} 
+          onClick={(e) => handleCategoryClick(e, '/Kitchen')}
+        >KITCHEN</NavLink>
+      </div>
     </header>
-    {/* CATEGORIES */}
-      <nav className="header-categories">
-        <NavLink to="/life">LIFE</NavLink>
-        <NavLink to="/tech">TECH</NavLink>
-        <NavLink to="/books">BOOKS</NavLink>
-        <NavLink to="/kitchen">KITCHEN</NavLink>
-      </nav>
-     </>
   );
-}
+};
 
-export default Header;
+export default HeaderComponent;
