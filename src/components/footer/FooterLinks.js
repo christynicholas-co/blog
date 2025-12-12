@@ -49,10 +49,10 @@ export default function FooterLinks() {
         <h3>HOME</h3>
         <nav className="footer-nav">
           <ul>
-            <li><a href="/template1">ABOUT</a></li>
-            <li><a href="/template2">SERVICES</a></li>
-            <li><a href="/template1">FAQs</a></li>
-            <li><a href="/template2">CONTACT</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/services">SERVICES</a></li>
+            <li><a href="/FAQs">FAQs</a></li>
+            <li><a href="/contact">CONTACT</a></li>
           </ul>
         </nav>
       </div>
