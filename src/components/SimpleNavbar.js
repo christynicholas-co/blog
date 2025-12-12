@@ -97,9 +97,9 @@ function SimpleNavbar() {
              <Nav.Link as={NavLink} to= "/contact">CONTACT</Nav.Link>
 
              <Container>
-          <Navbar.Brand href="#home"><img alt="" src="../img/logo.svg" width="30" height="30" className="d-inline-block align-top"/>
-          {' '} ARTFUL BYTES Blog
-          </Navbar.Brand>
+         {/* <Navbar.Brand href="#home"><img alt="" src="../img/logo.svg" width="30" height="30" className="d-inline-block align-top"/>
+          {' '} ARTFUL BYTES
+          </Navbar.Brand>*/}
         </Container>
             
           </Nav>

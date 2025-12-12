@@ -5,9 +5,9 @@
   flex-wrap: wrap;
 
 
-  background-color: #3F5A47; 
+  background-color: #313b35; 
   padding: 10px 100px; 
-  border-bottom: 10px solid #242220; 
+  border-bottom: 10px solid #45524b; 
 }
 
 
@@ -32,7 +32,7 @@
 
 
 .simple-navbar .dropdown-menu {
-  background-color: #3F5A47 !important;
+  background-color: #313b35 !important;
 }
 
 .simple-navbar .dropdown-item {
