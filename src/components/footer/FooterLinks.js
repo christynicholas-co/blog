@@ -3,7 +3,7 @@ import { FaInstagram, FaTiktok, FaThreads } from 'react-icons/fa6';
 export default function FooterLinks() {
   return (
     <>
-      <div className="col-xl-4 col-lg-6"> {/* Increased width for subscribe section */}
+      <div className="col-xl-4 col-lg-4 col-md-12"> {/* Increased width for subscribe section */}
         <h3>Subscribe for Updates</h3>
         <div className="newsletter-form">
               <form
@@ -45,7 +45,7 @@ export default function FooterLinks() {
         the first column (width 4) leaves exactly 8 units of width remaining for the 
         next three columns (width 2+2+2 = 6 units), giving you space for alignment.
       */}
-      <div className="col-xl-2 col-lg-2 col-md-4"> {/* Added col-md classes for better mobile alignment */}
+      <div className="col-xl-2 col-lg-2 col-md-4 ms-auto"> {/* Added col-md classes for better mobile alignment */}
         <h3>HOME</h3>
         <nav className="footer-nav">
           <ul>
