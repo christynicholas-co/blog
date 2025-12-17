@@ -2,7 +2,7 @@
 .footer {
   background: #45524b; 
   color: #E3E7E2;      /* light gray text for contrast */
-  font-family: Roboto, sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 40px 0 20px 0;
 }
 
@@ -52,6 +52,7 @@
 
 /* Copyright bar */
 .copyright {
+  font-family: "Montserrat", sans-serif;
   padding: 20px 0;
   background: #8c9c86; 
   text-align: center;

@@ -1,0 +1,13 @@
+/* BlogCTA.css */
+
+.cta-section {
+  background-color: #f8f9fa;
+}
+
+.cta-section .heading {
+  font-weight: 700;
+}
+
+.single-form-max-width {
+  max-width: 520px;
+}

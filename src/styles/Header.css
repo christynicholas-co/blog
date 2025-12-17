@@ -1,10 +1,72 @@
+/* ----------------------------------------------------- */
+/* 1. Colors, Fonts, and Typography */
+/* ----------------------------------------------------- */
+@import url('../fonts/fonts.css'); 
+
 .header-container {
   background-color: #1c1c1c; /* Dark background color */
   color: #d4d4d4; /* Light text color */
-  padding: 50px 5%; /* Adjust padding as needed */
-  font-family: sans-serif;
-
+  font-family: "Montserrat", sans-serif;
   background-image: linear-gradient(rgba(28, 28, 28, 0.8), rgba(10, 10, 10, 0.9)), url("./images/header/header-bg.jpg");
+}
+
+.main-nav-links {
+  font:"minerva";
+}
+
+.main-nav-links a, .social-icons .icon {
+  color: #d4d4d4;
+}
+
+.main-nav-links a:hover, .social-icons .icon:hover {
+  color: #ffffff;
+}
+
+.logo-text {
+  color: #d4d4d4;
+}
+
+.cart-count {
+  background-color: transparent;
+  color: #d4d4d4;
+}
+
+.blog-header h1 {
+  color: #d4d4d4;
+  font-family: "mirage-thin"; 
+}
+
+.blog-header h6 {
+  color: #a0a0a0;
+  font-family: "mirage-thin"; 
+}
+
+.divider {
+  border-top: 1px solid #444;
+}
+
+.category-item {
+  color: #d4d4d4;
+  background: linear-gradient(to bottom, transparent calc(100% - 2px), #d4d4d4 calc(100% - 2px));
+}
+
+.category-item:hover {
+    color: #1c1c1c; 
+    background-color: #d4d4d4; 
+}
+
+/* Active State: Change the background color when clicked (managed by React/JS) */
+.category-item.active {
+  background-color: #ffffff; 
+  color: #1c1c1c;
+}
+
+/* ----------------------------------------------------- */
+/* 2. Sizing, Padding, and Layout Behavior */
+/* ----------------------------------------------------- */
+
+.header-container {
+  padding: 50px 5%; 
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;
@@ -18,19 +80,20 @@
   padding-bottom: 20px;
 }
 
+/* Consolidate flex-basis definitions */
 .main-nav-links, .social-icons {
-    flex-basis: 200px; /* Adjust this fixed width as needed */
+    flex-basis: 300px; 
 }
+
 .logo-container {
   flex-grow: 1;
   text-align: center;
 }
 
 .main-nav-links a, .social-icons .icon {
-  color: #d4d4d4;
   text-decoration: none;
   margin-right: 20px;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -39,29 +102,17 @@
 }
 
 .main-nav-links {
-  flex-basis: 300px;
   text-align: left;
 }
 
 .social-icons {
-  flex-basis: 300px;
   text-align: right;
-}
-
-.main-nav-links a:hover, .social-icons .icon:hover {
-  color: #ffffff;
-}
-
-.logo-container {
-  flex-grow: 1;
-  text-align: center;
 }
 
 .logo-text {
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 4px;
-  color: #d4d4d4;
 }
 
 .cart-icon {
@@ -73,8 +124,6 @@
     position: absolute;
     top: -8px;
     right: -10px;
-    background-color: transparent;
-    color: #d4d4d4;
     font-size: 10px;
 }
 
@@ -86,19 +135,16 @@
 .blog-header h1 {
   font-size: 40px;
   margin: 0;
-  color: #d4d4d4;
 }
 
 .blog-header h6 {
   font-size: 16px;
-  color: #a0a0a0;
   max-width: 600px;
   margin: 10px auto 0;
 }
 
 .divider {
   border: none;
-  border-top: 1px solid #444;
   margin: 20px 0;
 }
 
@@ -116,23 +162,11 @@
   cursor: pointer;
   text-decoration: none; 
   position: relative;
-  color: #d4d4d4;
-  background: linear-gradient(to bottom, transparent calc(100% - 2px), #d4d4d4 calc(100% - 2px));
   background-repeat: no-repeat; 
   transition: none; 
 }
 
-
-.category-item:hover {
-    color: #1c1c1c; 
-    background-color: #d4d4d4; 
-}
-
-/* Active State: Change the background color when clicked (managed by React/JS) */
 .category-item.active {
-  background-color: #ffffff; 
-  color: #1c1c1c;
-  padding: 10px 20px;
-  border: 2px solid transparent;
+  padding: 10px 20px; /* Duplicate removed from original, kept here for layout */
+  border: 2px solid transparent; /* Duplicate removed from original, kept here for layout */
 }
-

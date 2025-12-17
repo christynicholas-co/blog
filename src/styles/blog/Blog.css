@@ -1,0 +1,66 @@
+/* --- Blog.css: Fully Flush Layout --- */
+
+.blog-layout {
+    display: grid;
+    grid-template-columns: 275px 1fr;
+    gap: 0;
+    width: 100%;
+    min-height: calc(100vh - 200px);
+}
+
+/* Left sidebar column */
+.blog-left {
+    position: sticky;
+    top: 0;
+    align-self: stretch;
+    display: flex;
+}
+
+/* Sidebar fills column */
+.blog-left .blog-sidebar {
+    flex: 1;
+}
+
+/* Right content column */
+.blog-right {
+    min-width: 0;
+}
+
+/* Pagination */
+.blog-pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+/* Footer */
+.blog-footer {
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #767676;
+}
+
+.blog-footer a {
+    color: #4DB35A;
+    text-decoration: none;
+}
+
+.blog-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .blog-layout {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .blog-left {
+        position: static;
+    }
+}

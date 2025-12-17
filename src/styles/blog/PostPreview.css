@@ -1,0 +1,57 @@
+/* --- PostPreview.css: Custom Styles for individual post listings --- */
+
+.item {
+    margin-bottom: 3rem !important; /* Spacing between post previews */
+    border-bottom: 1px solid #e0e0e0; /* Subtle separator line at the bottom of the item */
+    padding-bottom: 3rem; /* Add padding to match the spacing of the border line */
+}
+
+/* Ensure image and text sit side-by-side on larger screens */
+@media (min-width: 1200px) { /* xl breakpoint */
+    .row.g-xl-0 {
+        --bs-gutter-x: 0;
+    }
+}
+
+.post-thumb {
+    display: block;
+    border-radius: 5px; /* Subtle rounded corners for the images */
+    overflow: hidden;
+}
+
+.post-thumb img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.post-thumb:hover img {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.title a {
+    color: #434343; /* Dark gray title color */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.title a:hover {
+    color: #4DB35A; /* Green hover color */
+}
+
+.meta {
+    font-size: 0.875rem; /* Smaller font size for metadata */
+    color: #767676; /* Medium gray color */
+}
+
+.intro {
+    color: #434343; /* Standard text color */
+}
+
+.read-more {
+    color: #4DB35A; /* Green "Read more" link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}

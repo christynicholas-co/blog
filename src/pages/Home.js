@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import Blog from "../components/blog/blog";
+import Blog from "../components/blog/Blog";
 
 function Home() {
   return (
