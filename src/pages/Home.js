@@ -7,6 +7,7 @@ function Home() {
       <Header />
       <Blog/>
       {/* home page content later */}
+  
     </>
   );
 }
