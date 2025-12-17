@@ -12,8 +12,9 @@ export default function PostPreview({ post }) {
         <div className="item mb-5">
             <div className="row g-3 g-xl-0">
                 <div className="col-2 col-xl-3">
+
                     {/* Assuming image paths are correctly handled in a React environment */}
-                    <img className="img-fluid post-thumb" src="assets/images/blog/blog-post-thumb-1.jpg" alt="post thumbnail" />
+                    <img className="img-fluid post-thumb" src="/images/blog/blog-post-thumb-9.jpg" alt="post thumbnail" />
                 </div>
                 <div className="col">
                     <h3 className="title mb-1"><a className="text-link" href="blog-post.html">Top 3 JavaScript Frameworks</a></h3>

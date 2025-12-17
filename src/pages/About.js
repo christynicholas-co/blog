@@ -1,20 +1,24 @@
 import SimpleNavbar from "../components/SimpleNavbar";
+import AboutHeader from "./about/AboutHeader";
+import SubscribeBanner from "./about/SubscribeBanner";
+import WeeklyUpdates from "./about/WeeklyUpdates";
+import IconSystem from "./about/IconSystem";
+import AddtnlText from "./about/AddtnlText";
+import GridSection from "./about/GridSection";
+import BottomGrid from "./about/BottomGrid";
+
 
 function About() {
   return (
     <>
       <SimpleNavbar />
-      
-      
-
-      {/* About page content */}
-      <h1>About Artful Bytes</h1>
-      <h2>Coming Soon</h2>
-      <br></br>
-      <img src="https://picsum.photos/600/300" alt="Placeholder" />
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis sapien eget lectus luctus, in facilisis lorem feugiat.</p>   
-
-
+      <AboutHeader />
+      <SubscribeBanner />
+      <WeeklyUpdates />
+      <IconSystem />
+      <AddtnlText />
+      <GridSection />
+      <BottomGrid />
 
     </>
   );
