@@ -6,7 +6,7 @@ import About from "./pages/About";
 import Services from "./pages/services/mainservices/Services";
 import ServiceDetails from "./pages/services/servicesdetails/ServiceDetails";
 import Shop from "./pages/Shop";
-import Contact from "./pages/Contact";
+import Contact from "./pages/contact/Contact";
 
 // blog category imports
 import BlogLayout from "./components/layouts/BlogLayout";
