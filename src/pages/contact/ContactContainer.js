@@ -1,114 +1,85 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import '../../styles/pages/contact/ContactContainer.css';
 
 const ContactContainer = () => {
   const [activeView, setActiveView] = useState(null);
-  const [isActive, setIsActive] = useState(false);
   const [slideIndex, setSlideIndex] = useState(1);
 
-  const closeAll = () => {
-    setIsActive(false);
-    setTimeout(() => setActiveView(null), 300);
-  };
-
-  useEffect(() => {
-    if (activeView && activeView !== 'slideshow') {
-      requestAnimationFrame(() => setIsActive(true));
-    }
-  }, [activeView]);
-
-  const SlideContent = ({ index }) => {
-    switch (index) {
-      case 1:
-        return (
-          <>
-            <p>I AM MODAL ONE</p>
-            <button className="btn btn-dark" onClick={() => setSlideIndex(2)}>NEXT STEP</button>
-          </>
-        );
-      case 2:
-        return (
-          <>
-            <p>I AM MODAL TWO</p>
-            <button className="btn btn-dark" onClick={() => setSlideIndex(1)}>BACK</button>
-            <button className="btn btn-dark" onClick={() => setSlideIndex(3)}>NEXT STEP</button>
-          </>
-        );
-      case 3:
-        return (
-          <>
-            <p>I AM MODAL THREE</p>
-            <button className="btn btn-dark" onClick={() => setSlideIndex(2)}>BACK</button>
-            <button className="btn btn-dark" onClick={() => setSlideIndex(4)}>NEXT STEP</button>
-          </>
-        );
-      case 4:
-        return (
-          <>
-            <p>I AM MODAL FOUR</p>
-            <button className="btn btn-dark" onClick={() => setSlideIndex(1)}>BACK</button>
-          </>
-        );
-      default:
-        return null;
-    }
-  };
+  const closeAll = () => setActiveView(null);
 
   return (
     <div className="custom-widget-wrapper">
+      {/* MAIN MENU */}
       <div className="container text-center">
         <h1 className="mb-2">Examples</h1>
         <p className="lead mb-5">React-controlled overlays</p>
+
         <div className="row">
           <div className="col-md-8 offset-md-2 d-grid gap-2">
-            <button className="btn btn-outline-primary btn-lg" onClick={() => setActiveView('contact')}>CONTACT US</button>
-            <button className="btn btn-outline-secondary btn-lg" onClick={() => setActiveView('icons')}>ICONS BABY</button>
-            <button className="btn btn-outline-dark btn-lg" onClick={() => setActiveView('text')}>SHOW ME TEXT</button>
-            <button className="btn btn-dark btn-lg" onClick={() => { setActiveView('slideshow'); setSlideIndex(1); }}>SLIDESHOW</button>
+            <button onClick={() => setActiveView('contact')}>CONTACT US</button>
+            <button onClick={() => setActiveView('icons')}>ICONS BABY</button>
+            <button onClick={() => setActiveView('text')}>SHOW ME TEXT</button>
+            <button onClick={() => { setActiveView('slideshow'); setSlideIndex(1); }}>
+              SLIDESHOW
+            </button>
           </div>
         </div>
       </div>
 
+      {/* OFFCANVAS */}
       {activeView && activeView !== 'slideshow' && (
-        <div className={`offcanvas-overlay ${activeView} ${isActive ? 'active' : ''}`}>
+        <div className={`offcanvas-overlay ${activeView}`}>
           <div className="offcanvas-header">
-            <h6 className="m-0">{activeView.toUpperCase()}</h6>
-            <button className="btn-close" onClick={closeAll}>×</button>
+            <h6>{activeView.toUpperCase()}</h6>
+            <button onClick={closeAll}>X</button>
           </div>
+
           <div className="offcanvas-body">
-            {activeView === 'text' && <p className="lead">Your long lorem ipsum content here, managed by React.</p>}
+            {activeView === 'text' && (
+              <p>Your long lorem ipsum content here...</p>
+            )}
+
             {activeView === 'icons' && (
-              <div className="row g-3">
-                {['github', 'twitter', 'linkedin'].map(icon => (
-                  <div key={icon} className="col text-center">
-                    <i className={`bi-${icon} fs-2`}></i>
-                    <div className="text-muted">{icon}</div>
-                  </div>
-                ))}
+              <div className="icons-grid">
+                <div className="icon-item"><FaGithub /><span>GitHub</span></div>
+
+                <div className="icon-item"><FaTwitter /><span>Twitter</span></div>
+
+                <div className="icon-item"><FaLinkedin /><span>LinkedIn</span></div>
               </div>
             )}
+
+
             {activeView === 'contact' && (
               <form>
-                <button type="submit" className="btn btn-primary btn-lg w-100">SEND</button>
+                <input placeholder="First name" />
+                <input placeholder="Last name" />
+                <textarea placeholder="Message" />
+                <button type="submit">SEND</button>
               </form>
             )}
           </div>
         </div>
       )}
 
+      {/* MODAL SLIDESHOW */}
       {activeView === 'slideshow' && (
         <div className="modal-backdrop">
-          <div className="modal-dialog slide-modal">
-            <div className="modal-content">
-              <div className="modal-header">
-                <button className="btn-close" onClick={closeAll}>×</button>
-              </div>
-              <div className="modal-body">
-                <p>I AM MODAL {slideIndex}</p>
-              </div>
-              <div className="modal-footer">
-                <SlideContent index={slideIndex} />
-              </div>
+          <div className="modal-content">
+            <button className="close-x modal-close" onClick={closeAll }>X</button>
+
+            <p>I AM MODAL {slideIndex}</p>
+
+            <div>
+              {slideIndex > 1 && (
+                <button onClick={() => setSlideIndex(slideIndex - 1)}>BACK</button>
+              )}
+              {slideIndex < 4 ? (
+                <button onClick={() => setSlideIndex(slideIndex + 1)}>NEXT</button>
+              ) : (
+                <button onClick={closeAll}>CLOSE</button>
+              )}
             </div>
           </div>
         </div>

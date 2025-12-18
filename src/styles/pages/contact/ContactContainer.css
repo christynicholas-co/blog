@@ -1,30 +1,99 @@
-/* Container Sizing - Adjust these dimensions to resize the entire UI */
+/* WRAPPER */
 .custom-widget-wrapper {
   position: relative;
-  width: 970px;  /* Example width */
-  height: 500px; /* Example height */
+  width: 900px;
+  height: 500px;
   margin: 20px auto;
   border: 1px solid #ddd;
-  overflow: hidden; 
   background: #fff;
+  overflow: hidden;
 }
 
-/* Offcanvas Behavior and Positioning */
+/* OFFCANVAS BASE */
 .offcanvas-overlay {
   position: absolute;
   top: 0;
   bottom: 0;
-  background: white;
+  background: #fff;
   z-index: 10;
-  transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease;
 }
 
-.contact { right: 0; width: 500px; border-left: 1px solid #ddd; }
-.text { left: 0; width: 100%; border-right: 1px solid #ddd; }
-.icons { top: 0; width: 100%; height: 25%; border-bottom: 1px solid #ddd; }
+/* OFFCANVAS POSITIONS */
+.offcanvas-overlay.contact {
+  right: 0;
+  width: 400px;
+  border-left: 1px solid #ddd;
+}
 
+.offcanvas-overlay.text {
+  left: 0;
+  width: 100%;
+  border-right: 1px solid #ddd;
+}
+
+
+/* ICONS */
+.offcanvas-overlay.icons {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  border-bottom: 1px solid #ddd;
+}
+
+.icons-grid {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon-item svg {
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+
+
+/* HEADER */
+.offcanvas-header {
+  height: 48px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f9fa;
+  flex-shrink: 0;
+}
+
+/* BODY */
+.offcanvas-body {
+  flex: 1;
+  padding: 16px;
+  overflow: hidden;
+}
+
+/* FORM INPUTS */
+.form-underline {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #eee;
+  padding: 8px 0;
+  margin-bottom: 12px;
+  outline: none;
+}
+
+/* MODAL */
 /* Modal Styling */
 .modal-backdrop {
   position: absolute;
@@ -39,34 +108,11 @@
   z-index: 20;
 }
 
-.modal-dialog {
-  width: 80%; /* Ensure dialog has a size within the wrapper */
-  max-width: 400px;
-}
-
 .modal-content {
   background: white;
+  padding: 20px;
   border-radius: 8px;
-  width: 100%;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.modal-header {
-  padding: 1rem;
-  border-bottom: 1px solid #eee;
-  display: flex;
-  justify-content: flex-end; /* Pushes close button to the right */
-}
-
-.modal-body {
-  padding: 1rem;
-}
-
-.modal-footer {
-  padding: 1rem;
-  border-top: 1px solid #eee;
-  display: flex;
-  justify-content: space-between; /* Aligns buttons left and right */
+  width: 80%;
 }
 
 .offcanvas-header {
@@ -77,76 +123,18 @@
   background: #f8f9fa;
 }
 
-.btn-close {
+.close-x {
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 18px;
+  font-weight: 600;
   cursor: pointer;
   line-height: 1;
 }
 
-/* Form Styling */
-.form-underline {
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid #eee;
-  padding: 8px 0;
-  outline: none;
-  border-radius: 0;
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
 }
 
-.form-underline:focus {
-  border-bottom-color: #0d6efd;
-}
-
-/* Basic Button Styling */
-.btn {
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  border: 1px solid transparent;
-  text-align: center;
-  display: inline-block;
-  font-size: 1rem;
-}
-
-.btn-dark { background-color: #343a40; color: white; border-color: #343a40; }
-.btn-primary { background-color: #007bff; color: white; border-color: #007bff; }
-.btn-outline-primary { background-color: transparent; color: #007bff; border-color: #007bff; }
-.btn-outline-secondary { background-color: transparent; color: #6c757d; border-color: #6c757d; }
-.btn-outline-dark { background-color: transparent; color: #343a40; border-color: #343a40; }
-.btn-lg { padding: 0.75rem 1.5rem; font-size: 1.25rem; }
-
-/* Utility Classes used in JSX */
-.w-100 { width: 100%; }
-.d-grid { display: grid; }
-.gap-2 { gap: 0.5rem; }
-.text-center { text-align: center; }
-.mb-2 { margin-bottom: 0.5rem; }
-.mb-5 { margin-bottom: 3rem; }
-.m-0 { margin: 0; }
-.row { display: flex; flex-wrap: wrap; margin-left: -15px; margin-right: -15px; }
-.col { flex: 1 0 0%; padding-left: 15px; padding-right: 15px; }
-.col-md-8 { flex: 0 0 auto; width: 66.66666667%; }
-.offset-md-2 { margin-left: 16.66666667%; }
-
-.offcanvas-overlay {
-  transition: transform 0.75s ease;
-}
-
-.contact { transform: translateX(100%); }
-.text { transform: translateX(-100%); }
-.icons { transform: translateY(-100%); }
-
-.offcanvas-overlay.active.contact { transform: translateX(0); }
-.offcanvas-overlay.active.text { transform: translateX(0); }
-.offcanvas-overlay.active.icons { transform: translateY(0); }
-
-.slide-modal {
-  animation: slideUp 0.65s ease forwards;
-}
-
-@keyframes slideUp {
-  from { transform: translateY(60px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
