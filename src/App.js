@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/services/mainservices/Services";
 import ServiceDetails from "./pages/services/servicesdetails/ServiceDetails";
-import Shop from "./pages/Shop";
+import Shop from "./pages/shop/Shop";
 import Contact from "./pages/contact/Contact";
 
 // blog category imports

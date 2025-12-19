@@ -1,0 +1,35 @@
+.shop-nav-wrapper {
+  width: 100%;
+  background: #ffffff;
+}
+
+.shop-nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 64px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.shop-nav-item {
+  font-size: 0.95rem;
+  color: #9a9a9a;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.shop-nav-item:hover {
+  color: #000;
+}
+
+.shop-nav-item.active {
+  color: #000;
+  font-weight: 500;
+}
+
+.shop-nav-divider {
+  height: 1px;
+  width: 100%;
+  background: #e6e6e6;
+}

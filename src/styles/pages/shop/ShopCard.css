@@ -1,0 +1,78 @@
+/* src/styles/pages/shop/ShopCard.css */
+
+/* CARD */
+.shop-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 480px; /* taller than wide — adjust here */
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+  text-decoration: none;
+  color: #000;
+  overflow: hidden;
+}
+
+/* IMAGE */
+.shop-card-image {
+  width: calc(100% - 24px); /* white frame around image */
+  height: calc(100% - 96px); /* leaves room for bottom text */
+  margin: 12px;
+  background-image: url("https://picsum.photos/600/800");
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease, filter 0.3s ease;
+}
+
+/* BOTTOM TEXT BLOCK */
+.shop-card-content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 72px; /* ← THIS DEFINES CTA HEIGHT TOO */
+  padding: 12px;
+  background: #ffffff;
+  z-index: 2;
+}
+
+.shop-card-title {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.shop-card-price {
+  display: block;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* CTA — SAME HEIGHT AS TEXT BLOCK */
+.shop-card::after {
+  content: "Add to cart";
+  position: absolute;
+  left: 0;
+  bottom: -72px; /* ← match .shop-card-content height */
+  width: 100%;
+  height: 72px;  /* ← change BOTH places to resize CTA */
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  transition: bottom 0.25s ease;
+  z-index: 3;
+}
+
+/* HOVER */
+.shop-card:hover .shop-card-image {
+  transform: scale(1.12);
+  filter: brightness(0.6);
+}
+
+.shop-card:hover::after {
+  bottom: 0;
+}
