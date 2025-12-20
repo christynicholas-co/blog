@@ -17,6 +17,7 @@ import Kitchen from "./components/blog/Kitchen";
 
 // footer import
 import Footer from "./components/footer/Footer";
+import TermsAndServices from "./pages/legal/TermsAndServices";
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
       <Route path="/services/:id" element={<ServiceDetails />} />
       <Route path="/shop" element={<Shop />} />
       <Route path="/contact" element={<Contact />} />
+
+      <Route path="/terms" element={<TermsAndServices />} />
 
       {/* blog categories */}
       <Route path="/life" element={<BlogLayout><Life/></BlogLayout>} />

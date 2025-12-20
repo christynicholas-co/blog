@@ -1,0 +1,14 @@
+/* Shared layout styles */
+.legal-container {
+  padding: 40px;
+  line-height: 1.6;
+}
+
+/* Specific background classes */
+.bg-terms {
+  background-color: #f4f4f4; /* Example color */
+}
+
+.bg-privacy {
+  background-color: #e9ecef; /* Example color */
+}
