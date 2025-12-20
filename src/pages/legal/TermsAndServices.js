@@ -11,36 +11,35 @@ const TermsAndServices = () => {
         {/* INTRO */}
         <section className="legal-intro">
           <h1>Terms and Conditions</h1>
-          <p className="last-updated">Last updated December 19, 2025</p>
+          <p className="last-updated">Last updated December 20, 2025</p>
 
           <h2>Agreement to Our Legal Terms</h2>
 
           <p>
-            We are Artful Bytes ("Company," "we," "us," "our"), a company registered in Texas, United States at
-            1833 Cheddar Loop Road, 210, Austin, TX 78728.
+            We are Artful Bytes <strong>("Company," "we," "us," "our"),</strong> a company registered in Texas, United States at
+            301 South Heatherwilde Blvd, Pflugerville, TX 78660, United States.
           </p>
 
           <p>
-            We operate the website artfulbytes.blog (the "Site"), as well as any other related products and services
-            that refer or link to these legal terms (the "Legal Terms") (collectively, the "Services").
+            We operate the website artfulbytes.blog (the <strong>"Site"</strong>), as well as any other related products and services
+            that refer or link to these legal terms (the <strong>"Legal Terms"</strong>) (collectively, the <strong>"Services"</strong>).
           </p>
-
+          <hr />
           <p>
             You can contact us by phone at +1 (512) 630-0465, email at
-            <a href="mailto:hello@vytesandbrushes.com"> hello@vytesandbrushes.com</a>, or by mail to
-            1833 Cheddar Loop Road, 210, Austin, TX 78728, United States.
+            <a href="mailto:hello@bytesandbrushes.com"> hello@bytesandbrushes.com</a>, or by mail to
+            301 South Heatherwilde Blvd, Pflugerville, TX 78660, United States.
           </p>
 
           <p>
-            These Legal Terms constitute a legally binding agreement made between you and Artful Bytes.
-            If you do not agree with all of these Legal Terms, you must discontinue use immediately.
+            These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity <strong>("you"),</strong> and Artful Bytes, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.
           </p>
-
           <p>
-            The Services are intended for users who are at least 13 years old.
-            Minors must have permission from a parent or guardian.
+            We will provide you with prior notice of any scheduled changes to the Services you are using. The modified Legal Terms will become effective upon posting or notifying you by <a href="mailto:hello@bytesandbrushes.com"> hello@bytesandbrushes.com</a>, as stated in the email message. By continuing to use the Services after the effective date of any changes, you agree to be bound by the modified terms.
           </p>
-
+          <p>
+            The Services are intended for users who are at least 13 years of age. All users who are minors in the jurisdiction in which they reside (generally under the age of 18) must have the permission of, and be directly supervised by, their parent or guardian to use the Services. If you are a minor, you must have your parent or guardian read and agree to these Legal Terms prior to you using the Services.
+          </p>
           <p>
             We recommend that you print a copy of these Legal Terms for your records.
           </p>
@@ -120,8 +119,7 @@ const TermsAndServices = () => {
               </p>
               <h4>Your use of our Services</h4> 
                <p>
-                Subject to your compliance with these Legal Terms, including the "PROHIBITED
-                ACTIVITIES" section below, we grant you a non-exclusive, non-transferable, revocable
+                Subject to your compliance with these Legal Terms, including the <a href="#prohibited">"PROHIBITED ACTIVITIES"</a> section below, we grant you a non-exclusive, non-transferable, revocable
                 license to:
               </p>
                 <ul>
@@ -132,10 +130,7 @@ const TermsAndServices = () => {
                <p>
                 If you wish to make any use of the Services, Content. or Marks other than as set out in this
                 section or elsewhere in our Legal Terms, please address your request to:
-                hello@vytesandbrushes.com. If we ever grant you the permission to post, reproduce, or
-                publicly display any part of our Services or Content, you must identify us as the owners or
-                licensors of the Services, Content, or Marks and ensure that any copyright or proprietary
-                notice appears or is visible on posting, reproducing, or displaying our Content.
+                <a href="mailto:hello@bytesandbrushes.com"> hello@bytesandbrushes.com </a> If we ever grant you the permission to post, reproduce, or publicly display any part of our Services or Content, you must identify us as the owners or licensors of the Services, Content, or Marks and ensure that any copyright or proprietary notice appears or is visible on posting, reproducing, or displaying our Content.
               </p>
               <p>We reserve all rights not expressly granted to you in and to the Services, Content, and Marks.</p>
               <p>
@@ -144,7 +139,7 @@ const TermsAndServices = () => {
               </p>
               <h4>Your submissions and contributions</h4> 
               <p>
-                Please review this section and the "PROHIBITED ACTIVITIES" section carefully prior to
+                Please review this section and the <a href="#prohibited">"PROHIBITED ACTIVITIES"</a> section carefully prior to
                 using our Services to understand the (a) rights you give us and (b) obligations you have
                 when you post or upload any content through the Services.
               </p>
@@ -156,8 +151,7 @@ const TermsAndServices = () => {
                 or otherwise, without acknowledgment or compensation to you.
               </p>
               <p>
-                <h5>Contributions:</h5> The Services may invite you to chat, contribute to, or participate in blogs,
-                message boards, online forums, and other functionality during which you may create,
+                <h5>Contributions:</h5> The Services may invite you to chat, contribute to, or participate in blogs, message boards, online forums, and other functionality during which you may create,
                 submit, post, display, transmit, publish, distribute, or broadcast content and materials to us
                 or through the Services, including but not limited to text, writings, video, audio, photographs
                 music, graphics, comments, reviews, rating suggestions, personal information, or other
@@ -168,32 +162,23 @@ const TermsAndServices = () => {
                 You understand that Contributions may be viewable by other users of the Services and possibly through third-party websites.
               </p>
               <p>
-                <h5>When you post Contributions, you grant us a license (including use of your name, trademarks, and
-                logos): </h5>By posting any Contributions, you grant us an unrestricted, unlimited, irrevocable, perpetual, non-exclusive,
-                transferable, royalty-free, fully-paid, worldwide right, and license to: use, copy, reproduce, distribute, sell, resell. publish, broadcast, retitle, store, publicly perform, publicly display, reformat, translate, excerpt (in whole or in part). and exploit your Contributions (including, without limitation, your image, name, and voice) for any purpose, commercial, advertising, or otherwise, to prepare derivative works of, or incorporate into other works, your Contributions, and to sublicense the licenses granted in this section. Our use and distribution may occur in any media formats and through any media channels.
+                <h5>When you post Contributions, you grant us a license (including use of your name, trademarks, and logos): </h5>By posting any Contributions, you grant us an unrestricted, unlimited, irrevocable, perpetual, non-exclusive, transferable, royalty-free, fully-paid, worldwide right, and license to: use, copy, reproduce, distribute, sell, resell. publish, broadcast, retitle, store, publicly perform, publicly display, reformat, translate, excerpt (in whole or in part). and exploit your Contributions (including, without limitation, your image, name, and voice) for any purpose, commercial, advertising, or otherwise, to prepare derivative works of, or incorporate into other works, your Contributions, and to sublicense the licenses granted in this section. Our use and distribution may occur in any media formats and through any media channels.
               </p>
               <p>
                 This license includes our use of your name, company name, and franchise name, as applicable, and any of the trademarks, service marks, trade names, logos, and personal and commercial images you provide
               </p>
               <p>
-                <h5>You are responsible for what you post or upload:</h5> By sending us Submissions and/or posting Contributions
-                through any part of the Services or making Contributions accessible through the Services by linking your account
-                through the Services to any of your social networking accounts, you:
+                <h5>You are responsible for what you post or upload:</h5> By sending us Submissions and/or posting Contributions through any part of the Services or making Contributions accessible through the Services by linking your account through the Services to any of your social networking accounts, you:
               </p>
                 <ul>
-                  <li>confirm that you have read and agree with our "PROHIBITED ACTIVITIES" and will not post, send, publish,
-                      upload, or transmit through the Services any Submission nor post any Contribution that is illegal, harassing.
-                      hateful, harmful, defamatory, obscene, bullying, abusive, discriminatory, threatening to any person or group
-                      sexually explicit, false, inaccurate, deceitful, or misleading:
+                  <li>confirm that you have read and agree with our <a href="#prohibited">"PROHIBITED ACTIVITIES"</a> and will not post, send, publish, upload, or transmit through the Services any Submission nor post any Contribution that is illegal, harassing, hateful, harmful, defamatory, obscene, bullying, abusive, discriminatory, threatening to any person or group sexually explicit, false, inaccurate, deceitful, or misleading:
                   </li>
-                  <li>to the extent permissible by applicable law, waive any and all moral rights to any such Submission and/or
-                      Contribution;
+                  <li>to the extent permissible by applicable law, waive any and all moral rights to any such Submission and/or Contribution;
                   </li>
-                  <li>warrant that any such Submission and/or Contributions are original to you or that you have the necessary
-                      rights and licenses to submit such Submissions and/or Contributions and that you have full authority to grant
-                      us the above-mentioned rights in relation to your Submissions and/or Contributions; and
+                  <li>warrant that any such Submission and/or Contributions are original to you or that you have the necessary rights and licenses to submit such Submissions and/or Contributions and that you have full authority to grant us the above-mentioned rights in relation to your Submissions and/or Contributions; and
                   </li>
-                  <li>warrant and represent that your Submissions and/or Contributions do not constitute confidential information.</li>
+                  <li>warrant and represent that your Submissions and/or Contributions do not constitute confidential information.
+                  </li>
                 </ul>
               <p>
                 You are solely responsible for your Submissions and/or Contributions and you expressly agree to reimburse us for
@@ -205,7 +190,7 @@ const TermsAndServices = () => {
               </p>
               <h4>Copyright infringement</h4>
                <p>
-                We respect the intellectual property rights of others. If you believe that any material available on or through the Services infringes upon any copyright you own or control, please immediately refer to the "COPYRIGHT INFRINGEMENTS" section below.
+                We respect the intellectual property rights of others. If you believe that any material available on or through the Services infringes upon any copyright you own or control, please immediately refer to the <a href="#copyright">"COPYRIGHT INFRINGEMENTS" </a>section below.
               </p>
             </section>
             <section id="userreps"><h2>3. User Representations</h2>
@@ -266,119 +251,87 @@ const TermsAndServices = () => {
 
 
             <section id="prohibited"><h2>8. Prohibited Activities</h2>
-              <p>PASTE SECTION TEXT HERE</p>
-              <p>PASTE SECTION TEXT HERE</p>
+              <p>
+                You may not access or use the Services for any purpose other than that for which we make the Services available. The Services may not be used in connection with any commercial endeavors except those that are specifically endorsed or approved by us.
+              </p>
+              <p>
+                As a user of the Services, you agree not to:
+              </p>
               <ul>
-                  <li>confirm that you have read and agree with our "PROHIBITED ACTIVITIES" and will not post, send, publish,
-                      upload, or transmit through the Services any Submission nor post any Contribution that is illegal, harassing.
-                      hateful, harmful, defamatory, obscene, bullying, abusive, discriminatory, threatening to any person or group
-                      sexually explicit, false, inaccurate, deceitful, or misleading:
-                  </li>
-                  <li>to the extent permissible by applicable law, waive any and all moral rights to any such Submission and/or
-                      Contribution;
-                  </li>
-                  <li>warrant that any such Submission and/or Contributions are original to you or that you have the necessary
-                      rights and licenses to submit such Submissions and/or Contributions and that you have full authority to grant
-                      us the above-mentioned rights in relation to your Submissions and/or Contributions; and
+                  <li>
+                    Systematically retrieve data or other content from the Services to create or compile. directly or indirectly, a collection, compilation, database, or directory without written permission from us.
                   </li>
                   <li>
-                    warrant and represent that your Submissions and/or Contributions do not constitute confidential information.
-                  </li>
-                  <li>confirm that you have read and agree with our "PROHIBITED ACTIVITIES" and will not post, send, publish,
-                      upload, or transmit through the Services any Submission nor post any Contribution that is illegal, harassing.
-                      hateful, harmful, defamatory, obscene, bullying, abusive, discriminatory, threatening to any person or group
-                      sexually explicit, false, inaccurate, deceitful, or misleading:
-                  </li>
-                  <li>to the extent permissible by applicable law, waive any and all moral rights to any such Submission and/or
-                      Contribution;
-                  </li>
-                  <li>warrant that any such Submission and/or Contributions are original to you or that you have the necessary
-                      rights and licenses to submit such Submissions and/or Contributions and that you have full authority to grant
-                      us the above-mentioned rights in relation to your Submissions and/or Contributions; and
+                    Trick, defraud, or mislead us and other users, especially in any attempt to learn sensitive account information such as user passwords.
                   </li>
                   <li>
-                    warrant and represent that your Submissions and/or Contributions do not constitute confidential information.
-                  </li>
-                  <li>confirm that you have read and agree with our "PROHIBITED ACTIVITIES" and will not post, send, publish,
-                      upload, or transmit through the Services any Submission nor post any Contribution that is illegal, harassing.
-                      hateful, harmful, defamatory, obscene, bullying, abusive, discriminatory, threatening to any person or group
-                      sexually explicit, false, inaccurate, deceitful, or misleading:
-                  </li>
-                  <li>to the extent permissible by applicable law, waive any and all moral rights to any such Submission and/or
-                      Contribution;
-                  </li>
-                  <li>warrant that any such Submission and/or Contributions are original to you or that you have the necessary
-                      rights and licenses to submit such Submissions and/or Contributions and that you have full authority to grant
-                      us the above-mentioned rights in relation to your Submissions and/or Contributions; and
+                    Circumvent, disable, or otherwise interfere with security-related features of the Services, including features that prevent or restrict the use or copying of any Content or enforce limitations on the use of the Services and/or the Content contained therein.
                   </li>
                   <li>
-                    warrant and represent that your Submissions and/or Contributions do not constitute confidential information.
-                  </li>
-                  <li>confirm that you have read and agree with our "PROHIBITED ACTIVITIES" and will not post, send, publish,
-                      upload, or transmit through the Services any Submission nor post any Contribution that is illegal, harassing.
-                      hateful, harmful, defamatory, obscene, bullying, abusive, discriminatory, threatening to any person or group
-                      sexually explicit, false, inaccurate, deceitful, or misleading:
-                  </li>
-                  <li>to the extent permissible by applicable law, waive any and all moral rights to any such Submission and/or
-                      Contribution;
-                  </li>
-                  <li>warrant that any such Submission and/or Contributions are original to you or that you have the necessary
-                      rights and licenses to submit such Submissions and/or Contributions and that you have full authority to grant
-                      us the above-mentioned rights in relation to your Submissions and/or Contributions; and
+                    Disparage, tarnish, or otherwise harm, in our opinion, us and/or the Services.
                   </li>
                   <li>
-                    warrant and represent that your Submissions and/or Contributions do not constitute confidential information.
-                  </li>
-                  <li>confirm that you have read and agree with our "PROHIBITED ACTIVITIES" and will not post, send, publish,
-                      upload, or transmit through the Services any Submission nor post any Contribution that is illegal, harassing.
-                      hateful, harmful, defamatory, obscene, bullying, abusive, discriminatory, threatening to any person or group
-                      sexually explicit, false, inaccurate, deceitful, or misleading:
-                  </li>
-                  <li>to the extent permissible by applicable law, waive any and all moral rights to any such Submission and/or
-                      Contribution;
-                  </li>
-                  <li>warrant that any such Submission and/or Contributions are original to you or that you have the necessary
-                      rights and licenses to submit such Submissions and/or Contributions and that you have full authority to grant
-                      us the above-mentioned rights in relation to your Submissions and/or Contributions; and
+                    Use any information obtained from the Services in order to harass, abuse, or harm another person.
                   </li>
                   <li>
-                    warrant and represent that your Submissions and/or Contributions do not constitute confidential information.
-                  </li>
-                  <li>confirm that you have read and agree with our "PROHIBITED ACTIVITIES" and will not post, send, publish,
-                      upload, or transmit through the Services any Submission nor post any Contribution that is illegal, harassing.
-                      hateful, harmful, defamatory, obscene, bullying, abusive, discriminatory, threatening to any person or group
-                      sexually explicit, false, inaccurate, deceitful, or misleading:
-                  </li>
-                  <li>to the extent permissible by applicable law, waive any and all moral rights to any such Submission and/or
-                      Contribution;
-                  </li>
-                  <li>warrant that any such Submission and/or Contributions are original to you or that you have the necessary
-                      rights and licenses to submit such Submissions and/or Contributions and that you have full authority to grant
-                      us the above-mentioned rights in relation to your Submissions and/or Contributions; and
+                    Make improper use of our support services or submit false reports of abuse or misconduct.
                   </li>
                   <li>
-                    warrant and represent that your Submissions and/or Contributions do not constitute confidential information.
-                  </li>
-                  <li>confirm that you have read and agree with our "PROHIBITED ACTIVITIES" and will not post, send, publish,
-                      upload, or transmit through the Services any Submission nor post any Contribution that is illegal, harassing.
-                      hateful, harmful, defamatory, obscene, bullying, abusive, discriminatory, threatening to any person or group
-                      sexually explicit, false, inaccurate, deceitful, or misleading:
-                  </li>
-                  <li>to the extent permissible by applicable law, waive any and all moral rights to any such Submission and/or
-                      Contribution;
-                  </li>
-                  <li>warrant that any such Submission and/or Contributions are original to you or that you have the necessary
-                      rights and licenses to submit such Submissions and/or Contributions and that you have full authority to grant
-                      us the above-mentioned rights in relation to your Submissions and/or Contributions; and
+                    Use the Services in a manner inconsistent with any applicable laws or regulations.
                   </li>
                   <li>
-                    warrant and represent that your Submissions and/or Contributions do not constitute confidential information.
+                    Engage in unauthorized framing of or linking to the Services.
                   </li>
+                  <li>
+                    Upload or transmit (or attempt to upload or to transmit) viruses, Trojan horses, or other material, including excessive use of capital letters and spamming (continuous posting of repetitive text), that interferes with any party's uninterrupted use and enjoyment of the Services or modifies, impairs, disrupts, alters, or interferes with the use, features, functions, operation, or maintenance of the Services.
+                  </li>
+                  <li>
+                    Engage in any automated use of the system, such as using scripts to send comments or messages, or using any data mining, robots, or similar data gathering and extraction tools.
+                  </li>
+                  <li>
+                    Delete the copyright or other proprietary rights notice from any Content.
+                  </li>
+                  <li>
+                    Attempt to impersonate another user or person or use the username of another user.
+                  </li>
+                  <li>
+                    Upload or transmit (or attempt to upload or to transmit) any material that acts as a passive or active information collection or transmission mechanism, including without limitation, clear graphics interchange formats ("gifs"), 1×1 pixels, web bugs, cookies, or other similar devices (sometimes referred to as "spyware" or "passive collection mechanisms" or "pcms").
+                  </li>
+                  <li>
+                    Interfere with, disrupt, or create an undue burden on the Services or the networks or services connected to the Services.
+                  </li>
+                  <li>
+                    Harass, annoy, intimidate, or threaten any of our employees or agents engaged in providing any portion of the Services to you.
+                  </li>
+                  <li>
+                    Attempt to bypass any measures of the Services designed to prevent or restrict access to the Services, or any portion of the Services.
+                  </li>
+                  <li>
+                    Copy or adapt the Services' software, including but not limited to Flash, PHP, HTML JavaScript, or other code.
+                  </li>
+                  <li>
+                    Except as permitted by applicable law, decipher, decompile, disassemble, or reverse engineer any of the software comprising or in any way making up a part of the Services.
+                  </li>
+                  <li>
+                    Except as may be the result of standard search engine or Internet browser usage, use, launch, develop, or distribute any automated system, including without limitation, any spider, robot, cheat utility, scraper, or offline reader that accesses the Services, or use or launch any unauthorized script or other software.
+                  </li>
+                  <li>
+                    Use a buying agent or purchasing agent to make purchases on the Services.
+                  </li>
+                  <li>
+                    Make any unauthorized use of the Services, including collecting usernames and/or email addresses of users by electronic or other means for the purpose of sending unsolicited email, or creating user accounts by automated means or under false pretenses.
+                  </li>
+                  <li>
+                    Use the Services as part of any effort to compete with us or otherwise use the Services and/or the Content for any revenue-generating endeavor or commercial enterprise.
+                  </li>
+                  <li>
+                    Sell or otherwise transfer your profile.
+                  </li>
+                  <li>
+                    Use the Services to advertise or offer to sell goods and services
+                  </li>                                                     
                 </ul>
             </section>
-
-
-
             <section id="ugc"><h2>9. User Generated Contributions</h2>
               <p>
                 The Services may invite you to chat, contribute to, or participate in blogs, message boards, online forums, and other functionality, and may provide you with the opportunity to create, submit, post, display, transmit, perform, publish, distribute, or broadcast content and materials to us or on the Services, including but not limited to text, writings, video, audio, photographs, graphics, comments, suggestions, or personal information or other material(collectively, "Contributions"). Contributions may be viewable by other users of the Services and through third-party websites. As such, any Contributions you transmit may be treated as non-confidential and non-proprietary. When you create or make available any Contributions, you thereby represent and warrant that:
@@ -434,31 +387,26 @@ const TermsAndServices = () => {
                 Any use of the Services in violation of the foregoing violates these Legal Terms and may result in, among other things, termination or suspension of your rights to use the Services.
               </p>  
             </section>
-
-
             <section id="license"><h2>10. Contribution License</h2>
               <p>
-                PASTE SECTION TEXT HERE
+                By posting your Contributions to any part of the Services, you automatically grant, and you represent and warrant that you have the right to grant, to us an unrestricted, unlimited,irrevocable, perpetual, non-exclusive, transferable, royalty-free, fully-paid, worldwide right, and license to host, use, copy, reproduce, disclose, sell, resell, publish, broadcast, retitle,archive, store, cache, publicly perform, publicly display, reformat, translate, transmit, excerpt (in whole or in part), and distribute such Contributions (including, without limitation, your image and voice) for any purpose, commercial, advertising, or otherwise, and to prepare derivative works of, or incorporate into other works, such Contributions, and grant and authorize sublicenses of the foregoing. The use and distribution may occur in any media formats and through any media channels.
               </p>
               <p>
-                PASTE SECTION TEXT HERE
+                This license will apply to any form, media, or technology now known or hereafter developed, and includes our use of your name, company name, and franchise name, as applicable, and any of the trademarks, service marks, trade names, logos, and personal and commercial images you provide. You waive all moral rights in your Contributions, and you warrant that moral rights have not otherwise been asserted in your Contributions.
               </p>
               <p>
-                PASTE SECTION TEXT HERE
+                We do not assert any ownership over your Contributions. You retain full ownership of all of your Contributions and any intellectual property rights or other proprietary rights associated with your Contributions. We are not liable for any statements or representations in your Contributions provided by you in any area on the Services. You are solely responsible for your Contributions to the Services and you expressly agree to exonerate us from any and all responsibility and to refrain from any legal action against us regarding your Contributions.
               </p>
               <p>
-                PASTE SECTION TEXT HERE
+                We have the right, in our sole and absolute discretion, (1) to edit, redact, or otherwise change any Contributions; (2) to re-categorize any Contributions to place them in more appropriate locations on the Services; and (3) to pre-screen or delete any Contributions at any time and for any reason, without notice. We have no obligation to monitor your Contributions.
               </p>
             </section>
-
-
-
             <section id="reviews"><h2>11. Guidelines for Reviews</h2>
               <p>
-                PASTE SECTION TEXT HERE
+                We may provide you areas on the Services to leave reviews or ratings. When posting a review, you must comply with the following criteria: (1) you should have firsthand experience with the person/entity being reviewed; (2) your reviews should not contain offensive profanity, or abusive, racist, offensive, or hateful language; (3) your reviews should not contain discriminatory references based on religion, race, gender, national origin, age, marital status, sexual orientation, or disability; (4) your reviews should not contain references to illegal activity; (5) you should not be affiliated with competitors if posting negative reviews; (6) you should not make any conclusions as to the legality of conduct: (7) you may not post any false or misleading statements; and (8) you may not organize a campaign encouraging others to post reviews, whether positive or negative.
               </p>
               <p>
-                  PASTE SECTION TEXT HERE
+                  We may accept, reject, or remove reviews in our sole discretion. We have absolutely no obligation to screen reviews or to delete reviews, even if anyone considers reviewsobjectionable or inaccurate. Reviews are not endorsed by us, and do not necessarily represent our opinions or the views of any of our affiliates or partners. We do not assume liability for any review or for any claims, liabilities, or losses resulting from any review. By posting a review, you hereby grant to us a perpetual, non-exclusive, worldwide, royalty-free,fully paid, assignable, and sublicensable right and license to reproduce, modify, translate,transmit by any means, display, perform, and/or distribute all content relating to review.
               </p>
             </section>
             <section id="thirdparty"><h2>12. Third-Party Websites and Content</h2>
@@ -481,30 +429,47 @@ const TermsAndServices = () => {
                   We respect the intellectual property rights of others. If you believe that any material available on or through the Services infringes upon any copyright you own or control, please immediately notify us using the contact information provided below (a "Notification"). A copy of your Notification will be sent to the person who posted or stored the material addressed in the Notification. Please be advised that pursuant to applicable law you may be held liable for damages if you make material misrepresentations in a Notification. Thus, if you are not sure that material located on or linked to by the Services infringes your copyright, you should consider first contacting an attorney.
               </p>
             </section>
-
-
-
-
             <section id="termination"><h2>16. Term and Termination</h2>
-            <p>PASTE SECTION TEXT HERE</p></section>
+              <p>
+              These Legal Terms shall remain in full force and effect while you use the Services. WITHOUT LIMITING ANY OTHER PROVISION OF THESE LEGAL TERMS, WE RESERVE THE RIGHT TO. IN OUR SOLE DISCRETION AND WITHOUT NOTICE OR LIABILITY. DENY ACCESS TO AND USE OF THE SERVICES (INCLUDING BLOCKING CERTAIN IP ADDRESSES), TO ANY PERSON FOR ANY REASON OR FOR NO REASON, INCLUDING WITHOUT LIMITATION FOR BREACH OF ANY REPRESENTATION, WARRANTY, OR COVENANT CONTAINED IN THESE LEGAL TERMS OR OF ANY APPLICABLE LAW OR REGULATION. WE MAY TERMINATE YOUR USE OR PARTICIPATION IN THE SERVICES OR DELETE YOUR ACCOUNT AND ANY CONTENT OR INFORMATION THAT YOU POSTED AT ANY TIME. WITHOUT WARNING. IN OUR SOLE DISCRETION.
+              </p>
+              <p>
+                  If we terminate or suspend your account for any reason, you are prohibited from registering and creating a new account under your name, a fake or borrowed name, or the name of any third party, even if you may be acting on behalf of the third party. In addition to terminating or suspending your account, we reserve the right to take appropriate legal action, including without limitation pursuing civil, criminal, and injunctive redress.
+              </p>    
+            </section>
             <section id="modifications"><h2>17. Modifications and Interruptions</h2>
-            <p>PASTE SECTION TEXT HERE</p></section>
-
+              <p>
+                  We reserve the right to change, modify, or remove the contents of the Services at any time or for any reason at our sole discretion without notice. However, we have no obligation to update any information on our Services. We will not be liable to you or any third party for any modification, price change, suspension, or discontinuance of the Services.
+              </p>
+               <p>
+                  We cannot quarantee the Services will be available at all times. We may experience hardware, software, or other problems or need to perform maintenance related to the Services, resulting in interruptions, delays, or errors. We reserve the right to change, revise, update, suspend, discontinue, or otherwise modify the Services at any time or for any reason without notice to you. You agree that we have no liability whatsoever for any loss, damage, or inconvenience caused by your inability to access or use the Services during any downtime or discontinuance of the Services. Nothing in these Legal Terms will be construed to obligate us to maintain and support the Services or to supply any corrections, updates, or releases in connection therewith.
+              </p>
+            </section>
             <section id="law"><h2>18. Governing Law</h2>
               <p>
-                  PASTE SECTION TEXT HERE
+                  These Legal Terms and your use of the Services are governed by and construed in accordance with the laws of the State of Texas applicable to agreements made and to be entirely performed within the State of Texas, without regard to its conflict of law principles.
               </p>
             </section>
-
             <section id="disputes"><h2>19. Dispute Resolution</h2>
               <p>
-                PASTE SECTION TEXT HERE
+                <h5>Informal Negotiations</h5> To expedite resolution and control the cost of any dispute, controversy, or claim related to these Legal Terms (each a "Dispute" and collectively, the "Disputes") brought by either you or us (individually, a "Party" and collectively, the "Parties"), the Parties agree to first attempt to negotiate any Dispute (except those Disputes expressly provided below) informally for at least thirty (30) days before initiating arbitration. Such informal negotiations commence upon written notice from one Party to the other Party.
+              </p>
+              <p>
+                <h5>Binding Arbitration</h5> If the Parties are unable to resolve a Dispute through informal negotiations, the Dispute (except those Disputes expressly excluded below) will be finally and exclusively resolved by binding arbitration. YOU UNDERSTAND THAT WITHOUT THIS PROVISION, YOU WOULD HAVE THE RIGHT TO SUE IN COURT AND HAVE A JURY TRIAL. The arbitration shall be commenced and conducted under the Commercial Arbitration Rules of the American Arbitration Association ("AAA") and, where appropriate, the AAA's Supplementary Procedures for Consumer Related Disputes ("AAA Consumer Rules"), both of which are available at the <a href="https://www.adr.org/"> American Arbitration Association (AAA) website</a>. Your arbitration fees and your share of arbitrator compensation shall be governed by the AAA Consumer Rules and, where appropriate, limited by the AAA Consumer Rules. If such costs are determined by the arbitrator to be excessive, we will pay all arbitration fees and expenses. The arbitration may be conducted in person, through the submission of documents, by phone, or online. The arbitrator will make a decision in writing, but need not provide a statement of reasons unless requested by either Party. The arbitrator must follow applicable law, and any award may be challenged if the arbitrator fails to do so. Except where otherwise required by the applicable AAA rules or applicable law, the arbitration will take place in travis county, Texas. Except as otherwise provided herein, the Parties may litigate in court to compel arbitration, stay proceedings pending arbitration, or to confirm, modify, vacate, or enter judgment on the award entered by the arbitrator.
+              </p>
+              <p>
+                If for any reason, a Dispute proceeds in court rather than arbitration, the Dispute shall be commenced or prosecuted in the state and federal courts located in travis county, Texas, and the Parties hereby consent to, and waive all defenses of lack of personal jurisdiction, and forum non conveniens with respect to venue and jurisdiction in such state and federal courts. Application of the United Nations Convention on Contracts for the International Sale of Goods and the Uniform Computer Information Transaction Act (UCITA) are excluded from these Legal Terms.
+              </p>
+              <p>
+                In no event shall any Dispute brought by either Party related in any way to the Services be commenced more than one (1) years after the cause of action arose. If this provision is found to be illegal or unenforceable, then neither Party will elect to arbitrate any Dispute falling within that portion of this provision found to be illegal or unenforceable and such Dispute shall be decided by a court of competent jurisdiction within the courts listed for jurisdiction above, and the Parties agree to submit to the personal jurisdiction of that court.
+              </p>
+               <p>
+                <h5>Restrictions</h5> The Parties agree that any arbitration shall be limited to the Dispute between the Parties individually. To the full extent permitted by law. (a) no arbitration shall be joined with any other proceeding; (b) there is no right or authority for any Dispute to be arbitrated on a class- action basis or to utilize class action procedures; and (c) there is no right or authority for any Dispute to be brought in a purported representative capacity on behalf of the general public or any other persons.
+              </p>
+               <p>
+                <h5>Exceptions to Informal Negotiations and Arbitration</h5> The Parties agree that the following Disputes are not subject to the above provisions concerning informal negotiations binding arbitration: (a) any Disputes seeking to enforce or protect, or concerning the validity of, any of the intellectual property rights of a Party: (b) any Dispute related to, or arising from, allegations of theft, piracy, invasion of privacy, or unauthorized use; and (c) any claim for injunctive relief. If this provision is found to be illegal or unenforceable, then neither Party will elect to arbitrate any Dispute falling within that portion of this provision found to be illegal or unenforceable and such Dispute shall be decided by a court of competent jurisdiction within the courts listed for jurisdiction above. and the Parties agree to submit to the personal jurisdiction of that court.
               </p>
             </section>
-
-
-
-
             <section id="corrections"><h2>20. Corrections</h2>
               <p>
                 There may be information on the Services that contains typographical errors, inaccuracies, or omissions, including descriptions, pricing, availability, and various other information. We reserve the right to correct any errors, inaccuracies, or omissions and to change or update the information on the Services at any time, without prior notice.
@@ -549,7 +514,23 @@ const TermsAndServices = () => {
               </p>
             </section>
 
-            <section id="contact"><h2>28. Contact Us</h2><p>PASTE SECTION TEXT HERE</p></section>
+            <section id="contact"><h2>28. Contact Us</h2>
+              <p>
+                In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us at:
+              </p>
+            <address>
+              <p><strong>Artful Bytes</strong></p>
+              <p>301 South Heatherwilde Blvd</p>
+              <p>Pflugerville, TX 78660</p>
+              <p>United States</p>
+              <p>Phone: +1 (512) 630-0465</p>
+              <p>
+                <a href="mailto:hello@bytesandbrushes.com">
+                  hello@bytesandbrushes.com
+                </a>
+              </p>
+            </address>            
+            </section>
           </section>
 
         </div>
