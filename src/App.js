@@ -18,6 +18,7 @@ import Kitchen from "./components/blog/Kitchen";
 // footer import
 import Footer from "./components/footer/Footer";
 import TermsAndServices from "./pages/legal/TermsAndServices";
+import PrivacyPolicy from "./pages/legal/PrivacyPolicy";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
       <Route path="/contact" element={<Contact />} />
 
       <Route path="/terms" element={<TermsAndServices />} />
+       <Route path="/privacy" element={<PrivacyPolicy />} />
 
       {/* blog categories */}
       <Route path="/life" element={<BlogLayout><Life/></BlogLayout>} />
